@@ -1,0 +1,55 @@
+{
+  "name": "mcp-server-environment-agency",
+  "version": "1.0.0",
+  "description": "MCP server for UK Environment Agency Real Time Flood Monitoring API",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-server-environment-agency": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "mcp",
+    "server",
+    "environment-agency",
+    "flood-monitoring",
+    "uk",
+    "weather",
+    "water-levels",
+    "api"
+  ],
+  "author": "Dwain Barnes",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.19.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.1",
+    "jest": "^29.0.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwain-barnes/mcp-server-environment-agency.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dwain-barnes/mcp-server-environment-agency/issues"
+  },
+  "homepage": "https://github.com/dwain-barnes/mcp-server-environment-agency#readme"
+}
